@@ -5,9 +5,9 @@
                 oakandaspen-nuxt
             </h1>
             <h2 class="subtitle">
-                A simple display website for Oak &amp; Aspen
+                A second page
             </h2>
-            <nuxt-link to="/secondpage">A link to the second page</nuxt-link>
+            <nuxt-link to="/">A link to the home page</nuxt-link>
         </div>
     </div>
 </template>
