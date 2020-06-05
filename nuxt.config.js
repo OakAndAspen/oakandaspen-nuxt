@@ -1,8 +1,8 @@
+import en from "./locales/en.js"
+import fr from "./locales/fr.js"
+
 export default {
     mode: 'universal',
-    /*
-    ** Headers of the page
-    */
     head: {
         title: process.env.npm_package_name || '',
         meta: [
@@ -14,47 +14,34 @@ export default {
             {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
         ]
     },
-    /*
-    ** Customize the progress-bar color
-    */
     loading: {color: '#fff'},
-    /*
-    ** Global CSS
-    */
     css: [],
-    /*
-    ** Plugins to load before mounting the App
-    */
     plugins: [],
-    /*
-    ** Nuxt.js dev-modules
-    */
     buildModules: [],
-    /*
-    ** Nuxt.js modules
-    */
     modules: [
-        // Doc: https://bootstrap-vue.js.org
         'bootstrap-vue/nuxt',
-        // Doc: https://axios.nuxtjs.org/usage
         '@nuxtjs/axios',
         '@nuxtjs/pwa',
-        // Doc: https://github.com/nuxt-community/dotenv-module
         '@nuxtjs/dotenv',
+        [
+            'nuxt-i18n',
+            {
+                locales: ['en', 'fr'],
+                defaultLocale: 'fr',
+                vueI18n: {
+                    fallbackLocale: 'fr',
+                    messages: {
+                        en: en,
+                        fr: fr
+                    }
+                }
+            }
+        ]
     ],
-    /*
-    ** Axios module configuration
-    ** See https://axios.nuxtjs.org/options
-    */
     axios: {},
-    /*
-    ** Build configuration
-    */
     build: {
-        /*
-        ** You can extend webpack config here
-        */
         extend(config, ctx) {
+
         }
     }
 }
