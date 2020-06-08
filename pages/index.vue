@@ -8,14 +8,22 @@
             <p>This is a FontAwesome icon:</p>
             <fa :icon="['far', 'music']"/>
             <fa :icon="['fab', 'facebook-f']"/>
+
+            <p>This is the carousel:</p>
+            <the-carousel/>
         </main>
     </div>
 </template>
 
 <script>
+    import TheCarousel from "~/components/TheCarousel.vue";
+
     export default {
         head() {
-            return {title: this.$t('carousel[0].subtitle')}
+            return {title: ""}
+        },
+        components: {
+            TheCarousel
         }
     }
 </script>

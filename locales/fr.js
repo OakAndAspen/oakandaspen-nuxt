@@ -3,14 +3,6 @@ import blog2 from "../assets/articles/blog2.md";
 import blog3 from "../assets/articles/blog3.md";
 import blog4 from "../assets/articles/blog4.md";*/
 import {email} from "../app.config.js";
-/*import background1 from "../assets/images/carousel/background1.jpg";
-import background2 from "../assets/images/carousel/background2.jpg";
-import background3 from "../assets/images/carousel/background3.jpg";
-import biodi from "../assets/images/portfolio/biodi.png";
-import generationConnect from "../assets/images/portfolio/generation-connect.png";
-import mtgmanager from "../assets/images/portfolio/mtgmanager.png";
-import pawsome from "../assets/images/portfolio/pawsome.png";
-import viviskes from "../assets/images/portfolio/viviskes.png";*/
 
 export default {
     nav: {
@@ -25,7 +17,7 @@ export default {
         {
             title: "Irina Despot",
             subtitle: "Développeur web indépendante",
-            //image: background1,
+            image: "images/carousel/background1.jpg",
             button: {
                 title: "Mon histoire",
                 url: "/about"
@@ -34,7 +26,7 @@ export default {
         {
             title: "Développement web",
             subtitle: "Parcourez mes projets",
-            //image: background2,
+            image: "images/carousel/background2.jpg",
             button: {
                 title: "Portfolio",
                 url: "/portfolio"
@@ -43,7 +35,7 @@ export default {
         {
             title: "Pup'herd",
             subtitle: "Mon projet de startup",
-            //image: background3
+            image: "images/carousel/background3.jpg"
         }
     ],
     footnote: {
@@ -107,31 +99,31 @@ export default {
                 name: "Viviskes",
                 tags: ["Symfony", "React", "MySQL"],
                 description: "Site web et intranet d'une association de reconstitution historique celte",
-                //image: viviskes
+                image: "images/portfolio/viviskes.png"
             },
             {
                 name: "MtGManager",
                 tags: ["Symfony", "React", "MySQL"],
                 description: "Application de gestion de cartes à collectionner pour mon usage personnel",
-                //image: mtgmanager
+                image: "images/portfolio/mtgmanager.png"
             },
             {
                 name: "Paw'some",
                 tags: ["Symfony", "React", "MySQL"],
                 description: "Premier prototype pour mon projet de startup, depuis renommé Pup'herd",
-                //image: pawsome
+                image: "images/portfolio/pawsome.png"
             },
             {
                 name: "Biodi-vers-City",
                 tags: ["React", "Illustrator", "Team project"],
                 description: "Campagne de communication pour BirdLife. Projet en équipe effectué dans le cadre de mes études",
-                //image: biodi
+                image: "images/portfolio/biodi.png"
             },
             {
                 name: "Generation Connect",
                 tags: ["Backbone", "Team project"],
                 description: "Prototype d'une plateforme pour GenerationConnect. Projet en équipe effectué dans le cadre de mes études",
-                //image: generationConnect
+                image: "images/portfolio/generation-connect.png"
             }
         ]
     },
