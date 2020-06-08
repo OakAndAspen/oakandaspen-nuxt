@@ -5,6 +5,8 @@
             <nuxt-link :to="switchLocalePath('fr')">Français</nuxt-link>
             <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
         </header>
+        <the-title-bar/>
+        <the-menu/>
         <nav class="border border-danger p-4 mb-4">
             <h2>A menu with navigation</h2>
             <nuxt-link :to="localePath('index')">Home</nuxt-link>
@@ -19,9 +21,13 @@
 
 <script>
     import TheFooter from "~/components/TheFooter.vue";
+    import TheMenu from "~/components/TheMenu.vue";
+    import TheTitleBar from "~/components/TheTitleBar.vue";
 
     export default {
         components: {
+            TheTitleBar,
+            TheMenu,
             TheFooter
         }
     }
