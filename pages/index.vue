@@ -9,20 +9,28 @@
             <fa :icon="['far', 'music']"/>
             <fa :icon="['fab', 'facebook-f']"/>
 
-            <p>This is the carousel:</p>
+            <p>
+                This is a nice little badge: <badge>with some content</badge>
+            </p>
+
             <the-carousel/>
+            <the-footnote/>
         </main>
     </div>
 </template>
 
 <script>
+    import Badge from "~/components/Badge.vue";
     import TheCarousel from "~/components/TheCarousel.vue";
+    import TheFootnote from "~/components/TheFootnote.vue";
 
     export default {
         head() {
             return {title: ""}
         },
         components: {
+            Badge,
+            TheFootnote,
             TheCarousel
         }
     }
