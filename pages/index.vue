@@ -1,34 +1,22 @@
 <template>
-    <div>
-        <main>
+    <the-page-layout page-code="home">
             <h1>This is the Home page</h1>
-            <h2>This is a translated message:</h2>
-            <p>{{ $t('carousel[0].subtitle') }}</p>
-
-            <p>This is a FontAwesome icon:</p>
-            <fa :icon="['far', 'music']"/>
-            <fa :icon="['fab', 'facebook-f']"/>
-
-            <p>
-                This is a nice little badge: <badge>with some content</badge>
-            </p>
-
-            <the-carousel/>
             <the-footnote/>
-        </main>
-    </div>
+    </the-page-layout>
 </template>
 
 <script>
     import Badge from "~/components/Badge.vue";
     import TheCarousel from "~/components/TheCarousel.vue";
     import TheFootnote from "~/components/TheFootnote.vue";
+    import ThePageLayout from "~/layouts/ThePageLayout.vue";
 
     export default {
         head() {
             return {title: ""}
         },
         components: {
+            ThePageLayout,
             Badge,
             TheFootnote,
             TheCarousel

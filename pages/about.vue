@@ -1,20 +1,19 @@
 <template>
-    <div>
-        <main>
-            <h1>This is the About page</h1>
-            <h2>This is a translated message:</h2>
-            <p>{{ $t('carousel[0].subtitle') }}</p>
-            <the-footnote/>
-        </main>
-    </div>
+    <the-page-layout page-code="about">
+        <h1>This is the About page</h1>
+        <the-footnote/>
+    </the-page-layout>
 </template>
 
 <script>
     import TheFootnote from "~/components/TheFootnote.vue";
+    import ThePageLayout from "~/layouts/ThePageLayout.vue";
+
     export default {
-        components: {TheFootnote},
+        name: "About",
+        components: {ThePageLayout, TheFootnote},
         head() {
-            return {title: this.$t('carousel[0].subtitle')}
+            return {title: this.$t('My about page')}
         }
     }
 </script>
