@@ -1,6 +1,6 @@
 <template>
-    <nav id="TheMenu"
-         :class="'px-0 my-4' + navClass">
+    <nav id="TheInlineMenu"
+         class="px-0 my-4 d-none d-md-block">
         <ul class="m-0 p-0">
             <li v-for="e of entries" :key="e.url"
                 class="d-inline-block mr-3">
@@ -15,8 +15,8 @@
 
 <script>
     export default {
-        name: "TheMenu",
-        props: ['theme', 'isOpen'],
+        name: "TheInlineMenu",
+        props: ['theme'],
         data() {
             return {
                 entries: [
@@ -27,23 +27,22 @@
                     {code: "about", url: "about"},
                     {code: "contact", url: "contact"}
                 ],
-                linkColor: "text-" + (this.theme === "light" ? "light" : "secondary"),
-                navClass: this.isOpen ? "" : " d-none d-md-block"
+                linkColor: "text-" + (this.theme === "light" ? "light" : "secondary")
             }
         }
     }
 </script>
 
 <style>
-    #TheMenu {
+    #TheInlineMenu {
         font-variant: all-small-caps;
     }
 
-    #TheMenu li {
+    #TheInlineMenu li {
         list-style-type: none;
     }
 
-    #TheMenu li a {
+    #TheInlineMenu li a {
         font-weight: bold;
         font-size: 1.4em;
     }

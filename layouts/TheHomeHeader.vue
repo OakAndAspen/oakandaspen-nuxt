@@ -4,9 +4,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <the-title-bar theme="light" @onToggleMenu="toggleMenu"/>
+                    <the-title-bar theme="light" @toggleNav="$emit('toggleNav')"/>
                     <hr class="border-light"/>
-                    <the-menu theme="light" :is-open="isOpen"/>
+                    <the-inline-menu theme="light"/>
                     <the-carousel @change="changeBackground"/>
                 </div>
             </div>
@@ -16,22 +16,18 @@
 
 <script>
     import TheCarousel from "~/components/TheCarousel.vue";
-    import TheMenu from "~/components/TheMenu.vue";
+    import TheInlineMenu from "~/components/TheInlineMenu.vue";
     import TheTitleBar from "~/components/TheTitleBar.vue";
 
     export default {
         name: "TheHomeHeader",
-        components: {TheTitleBar, TheMenu, TheCarousel},
+        components: {TheInlineMenu, TheTitleBar, TheCarousel},
         data() {
             return {
-                isOpen: false,
                 background: this.$t("carousel[0].image")
             }
         },
         methods: {
-            toggleMenu() {
-                this.isOpen = !this.isOpen;
-            },
             changeBackground(url) {
                 this.background = url;
             }

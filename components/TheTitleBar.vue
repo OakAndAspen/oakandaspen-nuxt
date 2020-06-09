@@ -2,35 +2,28 @@
     <div id="TheTitleBar"
          :class="'d-flex align-items-center text-' + textColor">
         <fa :icon="['far', 'bars']"
-            :onClick="onToggleNav"
+            @click="$emit('toggleNav')"
             class="display-3 mr-4 d-md-none pointer"/>
-        <span class="Logo display-1 mb-2">
-            Oak&Aspen
-        </span>
+        <logo/>
         <span class="ml-auto d-none d-md-block">
-                <nuxt-link v-for="l of languages" :key="l"
-                           :to="switchLocalePath(l)"
-                           :class='"Link mr-3 small-caps text-" + textColor'>
-                    {{l.toUpperCase()}}
-                </nuxt-link>
+            <language-switcher :theme="theme"/>
         </span>
-        <span class="d-none d-md-block">
-            <a v-for="l of links" :key="l.title"
-               :href="l.url"
-               :title="l.title"
-               :class="'Link ml-2 py-1 px-2 bg-' + linkBackground">
-                <fa :icon='["fab", l.icon]'
-                    :class="'text-' + linkColor"/>
-            </a>
+        <span class="ml-4 d-none d-md-block">
+            <social-links :theme="theme"/>
         </span>
+
     </div>
 </template>
 
 <script>
-    import {facebookLink, gitHubLink, languages, linkedInLink} from "~/app.config.js";
+    import LanguageSwitcher from "~/components/LanguageSwitcher.vue";
+    import Logo from "~/components/Logo.vue";
+    import SocialLinks from "~/components/SocialLinks.vue";
+    import {facebookLink, gitHubLink, languages, linkedInLink} from "../app.config.js";
 
     export default {
         name: "TheTitleBar",
+        components: {Logo, LanguageSwitcher, SocialLinks},
         props: ["theme", "onToggleNav"],
         data() {
             return {
@@ -49,10 +42,6 @@
 </script>
 
 <style>
-    #TheTitleBar .Logo {
-        font-family: "Pacifico", sans-serif;
-    }
-
     #TheTitleBar .Link {
         font-size: 1.4em;
         border-radius: 50%;

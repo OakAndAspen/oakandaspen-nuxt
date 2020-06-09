@@ -1,7 +1,12 @@
 <template>
     <div id="App">
-        <the-normal-header v-if="pageCode !== 'home'" :page-code="pageCode"/>
-        <the-home-header v-if="pageCode === 'home'"/>
+        <the-normal-header v-if="pageCode !== 'home'"
+                           @toggleNav="isMenuOpen = !isMenuOpen"
+                           :page-code="pageCode"/>
+        <the-home-header v-if="pageCode === 'home'"
+                         @toggleNav="isMenuOpen = !isMenuOpen"/>
+        <the-floating-menu v-if="isMenuOpen"
+                           @toggleNav="isMenuOpen = !isMenuOpen"/>
         <main class="container py-4">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
@@ -14,14 +19,20 @@
 </template>
 
 <script>
+    import TheFloatingMenu from "~/components/TheFloatingMenu.vue";
     import TheFooter from "~/components/TheFooter.vue";
     import TheHomeHeader from "~/layouts/TheHomeHeader.vue";
     import TheNormalHeader from "~/layouts/TheNormalHeader.vue";
 
     export default {
         name: "ThePageLayout",
+        data() {
+            return {
+                isMenuOpen: false
+            }
+        },
         props: ["pageCode"],
-        components: {TheHomeHeader, TheNormalHeader, TheFooter}
+        components: {TheFloatingMenu, TheHomeHeader, TheNormalHeader, TheFooter}
     }
 </script>
 

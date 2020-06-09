@@ -4,9 +4,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <the-title-bar theme="dark" @onToggleNav="toggleNav"/>
+                    <the-title-bar theme="dark" @toggleNav="$emit('toggleNav')"/>
                     <hr class="border-secondary"/>
-                    <the-menu theme="dark" :is-open="navOpen"/>
+                    <the-inline-menu theme="dark"/>
                 </div>
             </div>
         </div>
@@ -25,16 +25,16 @@
 </template>
 
 <script>
-    import TheMenu from "~/components/TheMenu.vue";
+    import TheFloatingMenu from "~/components/TheFloatingMenu.vue";
+    import TheInlineMenu from "~/components/TheInlineMenu.vue";
     import TheTitleBar from "~/components/TheTitleBar.vue";
 
     export default {
         name: "TheNormalHeader",
         props: ["pageCode"],
-        components: {TheMenu, TheTitleBar},
+        components: {TheFloatingMenu, TheInlineMenu, TheTitleBar},
         data() {
             return {
-                navOpen: false,
                 backgroundImage: "backgroundImage: url('images/carousel/background1.jpg')"
             }
         },
