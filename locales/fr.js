@@ -35,7 +35,11 @@ export default {
         {
             title: "Pup'herd",
             subtitle: "Mon projet de startup",
-            image: "images/carousel/background3.jpg"
+            image: "images/carousel/background3.jpg",
+            button: {
+                title: "",
+                url: ""
+            }
         }
     ],
     footnote: {

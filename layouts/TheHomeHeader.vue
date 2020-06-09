@@ -7,7 +7,7 @@
                     <the-title-bar theme="light" @onToggleMenu="toggleMenu"/>
                     <hr class="border-light"/>
                     <the-menu theme="light" :is-open="isOpen"/>
-                    <the-carousel/>
+                    <the-carousel @change="changeBackground"/>
                 </div>
             </div>
         </div>
@@ -24,18 +24,21 @@
         components: {TheTitleBar, TheMenu, TheCarousel},
         data() {
             return {
-                isOpen: false
+                isOpen: false,
+                background: this.$t("carousel[0].image")
             }
         },
         methods: {
             toggleMenu() {
                 this.isOpen = !this.isOpen;
+            },
+            changeBackground(url) {
+                this.background = url;
             }
         },
         computed: {
             backgroundImage() {
-                let url = "images/carousel/background1.jpg";
-                return 'backgroundImage: url("' + url + '")';
+                return 'backgroundImage: url("' + this.background + '")';
             }
         }
     }

@@ -9,7 +9,7 @@
                 {{$t("carousel["+index+"].title")}}
             </h1>
             <h4>{{$t("carousel["+index+"].subtitle")}}</h4>
-            <nuxt-link v-if="$t('carousel['+index+'].button')"
+            <nuxt-link v-if="$t('carousel['+index+'].button.title') !== ''"
                        class="btn b-green t-white mt-4"
                        :to="localePath($t('carousel['+index+'].url'))">
                 {{$t("carousel["+index+"].button.title")}}
@@ -36,12 +36,14 @@
                 let index = this.index;
                 index = (index === this.length - 1) ? 0 : index + 1;
                 this.index = index;
+                this.$emit("change", this.$t("carousel[" + index + "].image"));
             },
             previous() {
                 console.log("next method");
                 let index = this.index;
                 index = (index === 0) ? this.length - 1 : index - 1;
                 this.index = index;
+                this.$emit("change", this.$t("carousel[" + index + "].image"));
             }
         }
     }
