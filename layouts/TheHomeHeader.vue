@@ -1,7 +1,6 @@
 <template>
-    <header id="TheHomeHeader" class="py-4" :style="{
-                backgroundImage: 'url(images/carousel/background1.jpg)'
-            }">
+    <header id="TheHomeHeader"
+            class="py-4" :style="backgroundImage">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
@@ -31,6 +30,12 @@
         methods: {
             toggleMenu() {
                 this.isOpen = !this.isOpen;
+            }
+        },
+        computed: {
+            backgroundImage() {
+                let url = "images/carousel/background1.jpg";
+                return 'backgroundImage: url("' + url + '")';
             }
         }
     }

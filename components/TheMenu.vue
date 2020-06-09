@@ -2,12 +2,10 @@
     <nav id="TheMenu"
          :class="'px-0 my-4' + navClass">
         <ul class="m-0 p-0">
-            <li v-for="e of entries"
-                :style="{listStyleType: 'none'}"
+            <li v-for="e of entries" :key="e.url"
                 class="d-inline-block mr-3">
                 <nuxt-link :class="linkColor"
-                           :to="localePath(e.url)"
-                           :style="{fontWeight: 'bold', fontSize: '1.4em'}">
+                           :to="localePath(e.url)">
                     {{$t('nav.'+e.code)}}
                 </nuxt-link>
             </li>
@@ -39,5 +37,14 @@
 <style>
     #TheMenu {
         font-variant: all-small-caps;
+    }
+
+    #TheMenu li {
+        list-style-type: none;
+    }
+
+    #TheMenu li a {
+        font-weight: bold;
+        font-size: 1.4em;
     }
 </style>

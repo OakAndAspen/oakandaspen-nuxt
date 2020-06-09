@@ -1,21 +1,23 @@
 <template>
     <div id="TheCarousel"
-         class="d-flex justify-content-between align-items-center text-center my-4 py-4"
-         :style="backgroundImage">
-    <fa :icon='["far", "angle-left"]'
-        class="arrow display-1 pointer" @click="previous"/>
-    <div class="t-white">
-        <h1 class="small-caps font-weight-bold">
-            {{$t("carousel["+index+"].title")}}
-        </h1>
-        <h4>{{$t("carousel["+index+"].subtitle")}}</h4>
-        <nuxt-link v-if="$t('carousel['+index+'].button')"
-                   class="btn b-green t-white mt-4"
-                   :to="localePath($t('carousel['+index+'].url'))">
-            {{$t("carousel["+index+"].button.title")}}
-        </nuxt-link>
-    </div>
-    <fa :icon="['far', 'angle-right']" class="arrow display-1 pointer" @click="next"/>
+         class="d-flex justify-content-between align-items-center text-center my-4 py-4">
+        <fa :icon="['far', 'angle-left']"
+            @click="previous"
+            class="arrow display-1 pointer"/>
+        <div class="t-white">
+            <h1 class="small-caps font-weight-bold">
+                {{$t("carousel["+index+"].title")}}
+            </h1>
+            <h4>{{$t("carousel["+index+"].subtitle")}}</h4>
+            <nuxt-link v-if="$t('carousel['+index+'].button')"
+                       class="btn b-green t-white mt-4"
+                       :to="localePath($t('carousel['+index+'].url'))">
+                {{$t("carousel["+index+"].button.title")}}
+            </nuxt-link>
+        </div>
+        <fa :icon="['far', 'angle-right']"
+            @click="next"
+            class="arrow display-1 pointer"/>
     </div>
 </template>
 
@@ -41,12 +43,6 @@
                 index = (index === 0) ? this.length - 1 : index - 1;
                 this.index = index;
             }
-        },
-        computed: {
-            backgroundImage() {
-                let url = this.$t("carousel[" + this.index + "].image");
-                return 'backgroundImage: url("' + url + '")';
-            }
         }
     }
 </script>
@@ -54,8 +50,6 @@
 <style scoped>
     #TheCarousel {
         font-family: 'Novecento', sans-serif;
-        background-size: cover;
-        background-position: top center;
     }
 
     #TheCarousel .arrow {

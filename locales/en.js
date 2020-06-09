@@ -1,7 +1,7 @@
-/*import blog1 from "../assets/articles/blog1.md";
-import blog2 from "../assets/articles/blog2.md";
-import blog3 from "../assets/articles/blog3.md";
-import blog4 from "../assets/articles/blog4.md";*/
+/*import blog1 from "~/assets/articles/blog1.md";
+import blog2 from "~/assets/articles/blog2.md";
+import blog3 from "~/assets/articles/blog3.md";
+import blog4 from "~/assets/articles/blog4.md";*/
 import {email} from "../app.config.js";
 
 export default {

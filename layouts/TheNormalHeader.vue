@@ -1,5 +1,6 @@
 <template>
-    <header id="TheNormalHeader" class="py-4">
+    <header id="TheNormalHeader"
+            class="py-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
@@ -9,7 +10,7 @@
                 </div>
             </div>
         </div>
-        <div class="PageTitle mt-2" :style="{backgroundImage:'url('+backgroundImage+')'}">
+        <div class="PageTitle mt-2" :style="backgroundImage">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 mx-auto py-4">
@@ -24,8 +25,8 @@
 </template>
 
 <script>
-    import TheMenu from "../components/TheMenu.vue";
-    import TheTitleBar from "../components/TheTitleBar.vue";
+    import TheMenu from "~/components/TheMenu.vue";
+    import TheTitleBar from "~/components/TheTitleBar.vue";
 
     export default {
         name: "TheNormalHeader",
@@ -34,7 +35,7 @@
         data() {
             return {
                 navOpen: false,
-                backgroundImage: "images/carousel/background1.jpg"
+                backgroundImage: "backgroundImage: url('images/carousel/background1.jpg')"
             }
         },
         methods: {

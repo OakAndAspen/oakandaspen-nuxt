@@ -1,5 +1,6 @@
 <template>
-    <footer class="bg-dark">
+    <footer id="TheFooter"
+            class="bg-dark">
         <div class="container py-4">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
@@ -9,36 +10,53 @@
                             <p class="t-gray">{{$t("footer.text")}}</p>
                         </div>
                         <div class="col-sm-6 col-lg-3">
-                            <h4 class="small-caps font-weight-bold mb-4 t-white">{{$t("footer.title1")}}</h4>
+                            <h4 class="small-caps font-weight-bold mb-4 t-white">
+                                {{$t("footer.title1")}}
+                            </h4>
                             <p class="t-gray">
                                 {{$t("footer.address.street")}}<br/>
                                 {{$t("footer.address.city")}}<br/>
                                 {{$t("footer.address.country")}}<br/><br/>
-                                <span class="t-green">{{email}}</span>
+                                <span class="t-green">
+                                    {{email}}
+                                </span>
                             </p>
                         </div>
                         <div class="col-sm-6 col-lg-3">
-                            <h4 class="small-caps font-weight-bold mb-4 t-white">{{$t("footer.title2")}}</h4>
-                            <nuxt-link :to="facebookLink" class="d-block mb-1 small-caps">
-                                <fa :icon='["fab", "facebook-f"]' class="mr-2"/>
+                            <h4 class="small-caps font-weight-bold mb-4 t-white">
+                                {{$t("footer.title2")}}
+                            </h4>
+                            <a :href="facebookLink"
+                               class="d-block mb-1 small-caps">
+                                <fa :icon='["fab", "facebook-f"]'
+                                    class="mr-2"/>
                                 <span>Facebook</span>
-                            </nuxt-link>
-                            <nuxt-link :to="linkedInLink" class="d-block mb-1 small-caps">
-                                <fa :icon='["fab", "linkedin-in"]' class="mr-2"/>
+                            </a>
+                            <a :href="linkedInLink"
+                               class="d-block mb-1 small-caps">
+                                <fa :icon='["fab", "linkedin-in"]'
+                                    class="mr-2"/>
                                 <span>LinkedIn</span>
-                            </nuxt-link>
-                            <nuxt-link :to="gitHubLink" class="d-block mb-1 small-caps">
-                                <fa :icon='["fab", "github-alt"]' class="mr-2"/>
+                            </a>
+                            <a :href="gitHubLink"
+                               class="d-block mb-1 small-caps">
+                                <fa :icon='["fab", "github-alt"]'
+                                    class="mr-2"/>
                                 <span>GitHub</span>
-                            </nuxt-link>
+                            </a>
                         </div>
                     </div>
 
                     <hr class="border-secondary"/>
 
                     <p class="font-weight-bold text-center my-4">
-                        <span class="small-caps">{{$t("footer.copyright.line1")}} </span>
-                        <span class="logo">Oak&Aspen</span><br/>
+                        <span class="small-caps">
+                            {{$t("footer.copyright.line1")}}
+                        </span>
+                        <span class="logo">
+                            Oak&Aspen
+                        </span>
+                        <br/>
                         <span class="small-caps">
                             copyright {{new Date().getFullYear()}} | {{$t("footer.copyright.line2")}}
                         </span>
@@ -65,7 +83,3 @@
         }
     }
 </script>
-
-<style>
-
-</style>
