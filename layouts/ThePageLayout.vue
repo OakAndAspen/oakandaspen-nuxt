@@ -1,6 +1,7 @@
 <template>
     <div id="App">
-        <the-normal-header v-if="pageCode !== 'homes'" :page-code="pageCode"/>
+        <the-normal-header v-if="pageCode !== 'home'" :page-code="pageCode"/>
+        <the-home-header v-if="pageCode === 'home'"/>
         <main class="container py-4">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
@@ -14,12 +15,13 @@
 
 <script>
     import TheFooter from "~/components/TheFooter.vue";
+    import TheHomeHeader from "~/layouts/TheHomeHeader.vue";
     import TheNormalHeader from "~/layouts/TheNormalHeader.vue";
 
     export default {
         name: "ThePageLayout",
         props: ["pageCode"],
-        components: {TheNormalHeader, TheFooter}
+        components: {TheHomeHeader, TheNormalHeader, TheFooter}
     }
 </script>
 
