@@ -25,6 +25,7 @@
 </template>
 
 <script>
+    import {imgDir} from "~/app.config.js";
     import TheFloatingMenu from "~/components/TheFloatingMenu.vue";
     import TheInlineMenu from "~/components/TheInlineMenu.vue";
     import TheTitleBar from "~/components/TheTitleBar.vue";
@@ -35,7 +36,7 @@
         components: {TheFloatingMenu, TheInlineMenu, TheTitleBar},
         data() {
             return {
-                backgroundImage: "backgroundImage: url('images/carousel/background1.jpg')"
+                backgroundImage: "backgroundImage: url(" + imgDir + "/carousel/background1.jpg)"
             }
         },
         methods: {

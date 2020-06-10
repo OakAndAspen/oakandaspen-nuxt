@@ -20,7 +20,7 @@
             return {
                 languages: [
                     {code: "fr", label: "FR", title: "Français"},
-                    {code: "EN", label: "EN", title: "English"}
+                    {code: "en", label: "EN", title: "English"}
                 ],
                 linkColor: this.theme === "light" ? "text-light" : "text-secondary"
             }

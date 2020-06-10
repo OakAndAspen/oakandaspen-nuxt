@@ -4,3 +4,4 @@ export const gitHubLink = "https://github.com/OakAndAspen";
 export const languages = ["fr", "en"];
 export const emailJsUserId = "user_Jf5dIiSq7V55gECxXlTGI";
 export const email = "contact@oakandaspen.ch";
+export const imgDir = "http://localhost:3000/images";

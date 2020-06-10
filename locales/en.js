@@ -2,7 +2,7 @@
 import blog2 from "~/assets/articles/blog2.md";
 import blog3 from "~/assets/articles/blog3.md";
 import blog4 from "~/assets/articles/blog4.md";*/
-import {email} from "../app.config.js";
+import {email, imgDir} from "../app.config.js";
 
 export default {
     nav: [
@@ -17,7 +17,7 @@ export default {
         {
             title: "Irina Despot",
             subtitle: "Freelance web developer",
-            image: "images/carousel/background1.jpg",
+            image: imgDir + "/carousel/background1.jpg",
             button: {
                 title: "My story",
                 url: "about"
@@ -26,7 +26,7 @@ export default {
         {
             title: "Web development",
             subtitle: "Browse my projects",
-            image: "images/carousel/background2.jpg",
+            image: imgDir + "/carousel/background2.jpg",
             button: {
                 title: "Portfolio",
                 url: "portfolio"
@@ -35,7 +35,7 @@ export default {
         {
             title: "Pup'herd",
             subtitle: "My startup project",
-            image: "images/carousel/background3.jpg",
+            image: imgDir + "/carousel/background3.jpg",
             button: {
                 title: "",
                 url: ""
@@ -103,31 +103,31 @@ export default {
                 name: "Viviskes",
                 tags: ["Symfony", "React", "MySQL"],
                 description: "Website and intranet of a celtic reenactment association",
-                image: "images/portfolio/viviskes.png"
+                image: imgDir + "/portfolio/viviskes.png"
             },
             {
                 name: "MtGManager",
                 tags: ["Symfony", "React", "MySQL"],
                 description: "Collectible cards management app for my personal use",
-                image: "images/portfolio/mtgmanager.png"
+                image: imgDir + "/portfolio/mtgmanager.png"
             },
             {
                 name: "Paw'some",
                 tags: ["Symfony", "React", "MySQL"],
                 description: "First prototype for my startup project, since renamed Pup'herd",
-                image: "images/portfolio/pawsome.png"
+                image: imgDir + "/portfolio/pawsome.png"
             },
             {
                 name: "Biodi-vers-City",
                 tags: ["React", "Illustrator", "Team project"],
                 description: "Marketing campaign for BirdLife. Team project during my studies",
-                image: "images/portfolio/biodi.png"
+                image: imgDir + "/portfolio/biodi.png"
             },
             {
                 name: "Generation Connect",
                 tags: ["Backbone", "Team project"],
                 description: "Prototype of a web platform to put young people at the service of the elderly. Team project during my studies",
-                image: "images/portfolio/generation-connect.png"
+                image: imgDir + "/portfolio/generation-connect.png"
             }
         ]
     },
