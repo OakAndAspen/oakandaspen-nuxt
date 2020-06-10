@@ -8,11 +8,11 @@
             <logo/>
         </div>
         <ul class="Navigation p-0 mx-0 my-4">
-            <li v-for="e of entries" :key="e.url"
+            <li v-for="e of this.$t('nav')" :key="e.url"
                 class="my-2">
                 <nuxt-link :to="localePath(e.url)"
                            class="text-white">
-                    {{$t('nav.'+e.code)}}
+                    {{e.label}}
                 </nuxt-link>
             </li>
         </ul>
@@ -33,19 +33,7 @@
 
     export default {
         name: "TheFloatingMenu",
-        components: {Logo, LanguageSwitcher, SocialLinks},
-        data() {
-            return {
-                entries: [
-                    {code: "home", url: "index"},
-                    {code: "portfolio", url: "portfolio"},
-                    {code: "services", url: "services"},
-                    {code: "blog", url: "blog"},
-                    {code: "about", url: "about"},
-                    {code: "contact", url: "contact"}
-                ]
-            }
-        }
+        components: {Logo, LanguageSwitcher, SocialLinks}
     }
 </script>
 

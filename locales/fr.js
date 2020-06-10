@@ -5,14 +5,14 @@ import blog4 from "~/assets/articles/blog4.md";*/
 import {email} from "../app.config.js";
 
 export default {
-    nav: {
-        home: "Accueil",
-        portfolio: "Portfolio",
-        services: "Services",
-        blog: "Blog",
-        about: "À propos",
-        contact: "Contact",
-    },
+    nav: [
+        {label: "Accueil", url: "index"},
+        {label: "Portfolio", url: "portfolio"},
+        {label: "Services", url: "services"},
+        {label: "Blog", url: "blog"},
+        {label: "À propos", url: "about"},
+        {label: "Contact", url: "contact"}
+    ],
     carousel: [
         {
             title: "Irina Despot",
@@ -20,7 +20,7 @@ export default {
             image: "images/carousel/background1.jpg",
             button: {
                 title: "Mon histoire",
-                url: "/about"
+                url: "about"
             }
         },
         {
@@ -29,7 +29,7 @@ export default {
             image: "images/carousel/background2.jpg",
             button: {
                 title: "Portfolio",
-                url: "/portfolio"
+                url: "portfolio"
             }
         },
         {

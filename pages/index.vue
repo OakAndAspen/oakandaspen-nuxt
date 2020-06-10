@@ -13,7 +13,7 @@
 
     export default {
         head() {
-            return {title: ""}
+            return {title: "Home page"}
         },
         components: {
             ThePageLayout,

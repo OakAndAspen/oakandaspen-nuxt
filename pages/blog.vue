@@ -1,6 +1,6 @@
 <template>
-    <the-page-layout page-code="about">
-        <h1>This is the About page</h1>
+    <the-page-layout page-code="blog">
+        <h1>This is the Blog page</h1>
     </the-page-layout>
 </template>
 
@@ -8,7 +8,7 @@
     import ThePageLayout from "~/layouts/ThePageLayout.vue";
 
     export default {
-        name: "About",
+        name: "Blog",
         components: {ThePageLayout}
     }
 </script>

@@ -11,7 +11,7 @@
             <h4>{{$t("carousel["+index+"].subtitle")}}</h4>
             <nuxt-link v-if="$t('carousel['+index+'].button.title') !== ''"
                        class="btn b-green t-white mt-4"
-                       :to="localePath($t('carousel['+index+'].url'))">
+                       :to="localePath($t('carousel['+index+'].button.url'))">
                 {{$t("carousel["+index+"].button.title")}}
             </nuxt-link>
         </div>
