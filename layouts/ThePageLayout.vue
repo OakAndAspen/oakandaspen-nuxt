@@ -50,7 +50,7 @@
         color: #9A9898
     }
 
-    .small-caps, section h1, section h2, section h3, section h4 {
+    .small-caps, main h1, main h2, main h3, main h4 {
         font-variant: all-small-caps;
     }
 
@@ -84,10 +84,6 @@
 
     .display-4 {
         font-size: 1.5em;
-    }
-
-    nav a:hover {
-        text-decoration: none;
     }
 
     .t-white {

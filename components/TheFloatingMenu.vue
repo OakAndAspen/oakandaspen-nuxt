@@ -55,4 +55,8 @@
         font-weight: bold;
         font-size: 1.4em;
     }
+
+    #TheFloatingMenu .Navigation li a:hover {
+        text-decoration: none;
+    }
 </style>

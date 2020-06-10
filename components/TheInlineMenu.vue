@@ -38,4 +38,8 @@
         font-weight: bold;
         font-size: 1.4em;
     }
+
+    #TheInlineMenu li a:hover {
+        text-decoration: none;
+    }
 </style>
