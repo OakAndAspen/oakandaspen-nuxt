@@ -13,7 +13,7 @@
 </template>
 
 <script>
-    import {facebookLink, gitHubLink, linkedInLink} from "../app.config.js";
+    import {facebookLink, gitHubLink, linkedInLink} from "~/config/app.js";
 
     export default {
         name: "SocialLinks",

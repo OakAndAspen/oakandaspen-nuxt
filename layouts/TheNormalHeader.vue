@@ -25,7 +25,7 @@
 </template>
 
 <script>
-    import {imgDir} from "~/app.config.js";
+    import {imgDir} from "~/config/app.js";
     import TheFloatingMenu from "~/components/TheFloatingMenu.vue";
     import TheInlineMenu from "~/components/TheInlineMenu.vue";
     import TheTitleBar from "~/components/TheTitleBar.vue";

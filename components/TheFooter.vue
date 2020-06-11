@@ -68,14 +68,13 @@
 </template>
 
 <script>
-    import {email, facebookLink, gitHubLink, languages, linkedInLink} from "../app.config.js";
+    import {email, facebookLink, gitHubLink, linkedInLink} from "~/config/app.js";
 
     export default {
         name: "TheFooter",
         data() {
             return {
                 email,
-                languages,
                 facebookLink,
                 gitHubLink,
                 linkedInLink

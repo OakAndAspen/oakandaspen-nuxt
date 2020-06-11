@@ -19,7 +19,7 @@
     import LanguageSwitcher from "~/components/LanguageSwitcher.vue";
     import Logo from "~/components/Logo.vue";
     import SocialLinks from "~/components/SocialLinks.vue";
-    import {facebookLink, gitHubLink, languages, linkedInLink} from "../app.config.js";
+    import {facebookLink, gitHubLink, linkedInLink} from "~/config/app.js";
 
     export default {
         name: "TheTitleBar",
@@ -27,7 +27,6 @@
         props: ["theme", "onToggleNav"],
         data() {
             return {
-                languages,
                 links: [
                     {icon: "facebook-f", title: "Facebook", url: facebookLink},
                     {icon: "linkedin-in", title: "LinkedIn", url: linkedInLink},

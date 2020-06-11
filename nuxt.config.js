@@ -1,5 +1,5 @@
-import en from "./locales/en.js"
-import fr from "./locales/fr.js"
+import i18n from "./config/nuxt-i18n.js";
+import fontawesome from "./config/nuxt-fontawesome.js";
 
 export default {
     mode: 'universal',
@@ -23,37 +23,8 @@ export default {
         '@nuxtjs/axios',
         '@nuxtjs/pwa',
         '@nuxtjs/dotenv',
-        [
-            'nuxt-i18n',
-            {
-                locales: ['en', 'fr'],
-                defaultLocale: 'fr',
-                vueI18n: {
-                    fallbackLocale: 'fr',
-                    messages: {
-                        en: en,
-                        fr: fr
-                    }
-                }
-            }
-        ],
-        [
-            'nuxt-fontawesome',
-            {
-                component: 'fa',
-                imports: [
-                    {
-                        set: '@fortawesome/pro-regular-svg-icons',
-                        icons: ['faAngleLeft', 'faAngleRight', 'faBars', 'faBrowser', 'faBullhorn', 'faCode', 'faDice',
-                            'faImage', 'faMusic', 'faPaw', 'faTools']
-                    },
-                    {
-                        set: '@fortawesome/free-brands-svg-icons',
-                        icons: ['faFacebookF', 'faLinkedinIn', 'faGithubAlt']
-                    }
-                ]
-            }
-        ]
+        ['nuxt-i18n', i18n],
+        ['nuxt-fontawesome', fontawesome]
     ],
     axios: {},
     build: {

@@ -30,7 +30,7 @@
 <script>
     import TheContactForm from "~/components/TheContactForm.vue";
     import ThePageLayout from "~/layouts/ThePageLayout.vue";
-    import {email} from "../app.config.js";
+    import {email} from "~/config/app.js";
 
     export default {
         name: "Contact",

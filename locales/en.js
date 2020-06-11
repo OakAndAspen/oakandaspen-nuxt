@@ -2,7 +2,7 @@
 import blog2 from "~/assets/articles/blog2.md";
 import blog3 from "~/assets/articles/blog3.md";
 import blog4 from "~/assets/articles/blog4.md";*/
-import {email, imgDir} from "../app.config.js";
+import {email, imgDir} from "../config/app.js";
 
 export default {
     nav: [

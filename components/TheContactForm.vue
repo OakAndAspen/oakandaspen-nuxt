@@ -40,7 +40,7 @@
 
 <script>
     import emailjs from "emailjs-com";
-    import {emailJsUserId} from "../app.config.js";
+    import {contactTemplateId, serviceId, userId} from "~/config/emailjs.js";
 
     export default {
         name: "ContactForm",
@@ -64,7 +64,7 @@
         methods: {
             send() {
                 let f = this.form;
-                console.log(f.message);
+
                 if (!f.email || !f.name || !f.message) {
                     this.message = this.$t('contact.messages.missing');
                     this.color = "warning";
@@ -80,9 +80,7 @@
                 this.message = this.$t('contact.messages.sending');
                 this.color = "info";
 
-                let service_id = "default_service";
-                let template_id = "template_e8F7s0hk";
-                emailjs.send(service_id, template_id, f, emailJsUserId).then(r => {
+                emailjs.send(serviceId, contactTemplateId, f, userId).then(r => {
                     if (r.status === 200) {
                         this.message = this.$t('contact.messages.success');
                         this.color = "success";
