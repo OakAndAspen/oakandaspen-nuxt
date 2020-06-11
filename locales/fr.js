@@ -275,6 +275,7 @@ export default {
         messages: {
             missing: "Merci de remplir tous les champs.",
             emailIncorrect: "L'adresse email renseignée n'est pas valide.",
+            sending: "Envoi en cours...",
             success: "Merci pour votre message! Je vous répondrai au plus vite.",
             error: "Une erreur inconnue est survenue. Merci d'adresser votre demande à " + email + ". Toutes nos excuses pour ce contretemps."
         }

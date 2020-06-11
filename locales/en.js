@@ -275,6 +275,7 @@ export default {
         messages: {
             missing: "Please complete all fields.",
             emailIncorrect: "The given email address is invalid.",
+            sending: "Sending...",
             success: "Thank you for your message! I shall answer as soon as possible.",
             error: "An unknown error has occured. Please send your request to " + email + ". Apologies for the inconvenience."
         }
