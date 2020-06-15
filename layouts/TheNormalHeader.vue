@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <the-title-bar theme="dark" @toggleNav="$emit('toggleNav')"/>
-                    <hr class="border-secondary"/>
+                    <hr class="border-secondary d-none d-md-block"/>
                     <the-inline-menu theme="dark"/>
                 </div>
             </div>

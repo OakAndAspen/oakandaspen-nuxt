@@ -1,10 +1,10 @@
 <template>
     <div id="TheTitleBar"
          :class="'d-flex align-items-center text-' + textColor">
+        <logo/>
         <fa :icon="['far', 'bars']"
             @click="$emit('toggleNav')"
-            class="display-3 mr-4 d-md-none pointer"/>
-        <logo/>
+            class="display-3 ml-auto d-md-none pointer"/>
         <span class="ml-auto d-none d-md-block">
             <language-switcher :theme="theme"/>
         </span>
