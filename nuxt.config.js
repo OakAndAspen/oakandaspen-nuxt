@@ -24,7 +24,8 @@ export default {
         '@nuxtjs/pwa',
         '@nuxtjs/dotenv',
         ['nuxt-i18n', i18n],
-        ['nuxt-fontawesome', fontawesome]
+        ['nuxt-fontawesome', fontawesome],
+        '@nuxtjs/markdownit'
     ],
     axios: {},
     build: {
