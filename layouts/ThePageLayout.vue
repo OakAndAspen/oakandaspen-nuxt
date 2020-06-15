@@ -58,18 +58,6 @@
         cursor: pointer;
     }
 
-    .logo {
-        font-family: "Pacifico", sans-serif;
-    }
-
-    footer p {
-        font-size: 0.9em;
-    }
-
-    #BlogMarkdown img {
-        width: 100%;
-    }
-
     .display-1 {
         font-size: 3em;
     }

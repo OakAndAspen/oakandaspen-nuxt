@@ -6,7 +6,9 @@
                 <div class="col-lg-10 mx-auto">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h3 class="logo mb-4 t-white">Oak&Aspen</h3>
+                            <h3 class="mb-4 t-white">
+                                <logo/>
+                            </h3>
                             <p class="t-gray">{{$t("footer.text")}}</p>
                         </div>
                         <div class="col-sm-6 col-lg-3">
@@ -53,9 +55,7 @@
                         <span class="small-caps">
                             {{$t("footer.copyright.line1")}}
                         </span>
-                        <span class="logo">
-                            Oak&Aspen
-                        </span>
+                        <logo/>
                         <br/>
                         <span class="small-caps">
                             copyright {{new Date().getFullYear()}} | {{$t("footer.copyright.line2")}}
@@ -68,10 +68,12 @@
 </template>
 
 <script>
+    import Logo from "~/components/Logo.vue";
     import {email, facebookLink, gitHubLink, linkedInLink} from "~/config/app.js";
 
     export default {
         name: "TheFooter",
+        components: {Logo},
         data() {
             return {
                 email,
@@ -82,3 +84,9 @@
         }
     }
 </script>
+
+<style>
+    #TheFooter p {
+        font-size: 0.9em;
+    }
+</style>

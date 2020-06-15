@@ -1,7 +1,7 @@
 <template>
     <div id="TheTitleBar"
          :class="'d-flex align-items-center text-' + textColor">
-        <logo/>
+        <logo class="display-1 mb-2"/>
         <fa :icon="['far', 'bars']"
             @click="$emit('toggleNav')"
             class="display-3 ml-auto d-md-none pointer"/>
@@ -11,7 +11,6 @@
         <span class="ml-4 d-none d-md-block">
             <social-links :theme="theme"/>
         </span>
-
     </div>
 </template>
 

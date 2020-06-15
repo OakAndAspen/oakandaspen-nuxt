@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <div class="d-flex align-items-center">
-                        <logo/>
+                        <logo class="display-1 mb-2"/>
                         <fa :icon="['far', 'bars']"
                             @click="$emit('toggleNav')"
                             class="display-3 ml-auto pointer"/>

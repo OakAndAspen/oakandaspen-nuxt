@@ -1,6 +1,8 @@
 # oakandaspen-nuxt
 
-> A simple display website for Oak &amp; Aspen
+> A simple display website for and by Oak&Aspen
+>
+> This project uses Nuxt, Vue, Bootstrap, FontAwesome, Moment and EmailJS to build an awesome server-side rendered website
 
 ## Build Setup
 
@@ -18,5 +20,3 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

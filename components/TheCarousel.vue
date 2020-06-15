@@ -32,14 +32,12 @@
         },
         methods: {
             next() {
-                console.log("next method");
                 let index = this.index;
                 index = (index === this.length - 1) ? 0 : index + 1;
                 this.index = index;
                 this.$emit("change", this.$t("carousel.slides[" + index + "].image"));
             },
             previous() {
-                console.log("next method");
                 let index = this.index;
                 index = (index === 0) ? this.length - 1 : index - 1;
                 this.index = index;

@@ -1,5 +1,5 @@
 <template>
-    <span class="Logo display-1 mb-2">
+    <span class="Logo">
         Oak&Aspen
     </span>
 </template>

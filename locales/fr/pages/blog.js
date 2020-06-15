@@ -10,26 +10,22 @@ export default {
         {
             number: 1,
             date: "2019-02-12",
-            title: "Going to California",
-            //file: blog1
+            title: "Going to California"
         },
         {
             number: 2,
             date: "2019-02-13",
-            title: "Visiting the City",
-            //file: blog2
+            title: "Visiting the City"
         },
         {
             number: 3,
             date: "2019-02-20",
-            title: "The child in us",
-            //file: blog3
+            title: "The child in us"
         },
         {
             number: 4,
             date: "2020-02-01",
-            title: "Lessons learned",
-            //file: blog4
+            title: "Lessons learned"
         }
     ]
 }
