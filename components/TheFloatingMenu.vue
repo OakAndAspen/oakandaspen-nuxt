@@ -11,7 +11,7 @@
                             class="display-3 ml-auto pointer"/>
                     </div>
                     <ul class="Navigation p-0 mx-0 my-4">
-                        <li v-for="e of this.$t('nav')" :key="e.url"
+                        <li v-for="e of this.$t('nav.entries')" :key="e.url"
                             class="my-2">
                             <nuxt-link :to="localePath(e.url)"
                                        class="text-white">

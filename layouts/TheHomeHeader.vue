@@ -24,7 +24,7 @@
         components: {TheInlineMenu, TheTitleBar, TheCarousel},
         data() {
             return {
-                background: this.$t("carousel[0].image")
+                background: this.$t("carousel.slides[0].image")
             }
         },
         methods: {

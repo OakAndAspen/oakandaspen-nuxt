@@ -1,5 +1,5 @@
-import en from "../locales/en.js";
-import fr from "../locales/fr.js";
+import en from "../locales/en";
+import fr from "../locales/fr";
 
 export default {
     locales: ['en', 'fr'],

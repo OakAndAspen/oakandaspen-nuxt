@@ -6,13 +6,13 @@
             class="arrow display-1 pointer"/>
         <div class="t-white">
             <h1 class="small-caps font-weight-bold">
-                {{$t("carousel["+index+"].title")}}
+                {{$t("carousel.slides["+index+"].title")}}
             </h1>
-            <h4>{{$t("carousel["+index+"].subtitle")}}</h4>
-            <nuxt-link v-if="$t('carousel['+index+'].button.title') !== ''"
+            <h4>{{$t("carousel.slides["+index+"].subtitle")}}</h4>
+            <nuxt-link v-if="$t('carousel.slides['+index+'].button.title') !== ''"
                        class="btn b-green t-white mt-4"
-                       :to="localePath($t('carousel['+index+'].button.url'))">
-                {{$t("carousel["+index+"].button.title")}}
+                       :to="localePath($t('carousel.slides['+index+'].button.url'))">
+                {{$t("carousel.slides["+index+"].button.title")}}
             </nuxt-link>
         </div>
         <fa :icon="['far', 'angle-right']"
@@ -36,14 +36,14 @@
                 let index = this.index;
                 index = (index === this.length - 1) ? 0 : index + 1;
                 this.index = index;
-                this.$emit("change", this.$t("carousel[" + index + "].image"));
+                this.$emit("change", this.$t("carousel.slides[" + index + "].image"));
             },
             previous() {
                 console.log("next method");
                 let index = this.index;
                 index = (index === 0) ? this.length - 1 : index - 1;
                 this.index = index;
-                this.$emit("change", this.$t("carousel[" + index + "].image"));
+                this.$emit("change", this.$t("carousel.slides[" + index + "].image"));
             }
         }
     }
