@@ -56,9 +56,13 @@
 <script>
     import TheFootnote from "~/components/TheFootnote.vue";
     import ThePageLayout from "~/layouts/ThePageLayout.vue";
+    import {getMetadata} from "~/utils/utils.js";
 
     export default {
         name: "About",
-        components: {TheFootnote, ThePageLayout}
+        components: {TheFootnote, ThePageLayout},
+        head() {
+            return getMetadata(this.$t("about.meta"));
+        }
     }
 </script>

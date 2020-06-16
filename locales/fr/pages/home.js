@@ -1,9 +1,10 @@
 export default {
-    pageTitle: "Accueil",
     meta: {
+        title: "Accueil",
         description: "Oak&Aspen est l'entreprise individuelle d'Irina Despot, développeur web indépendante.",
         keywords: "Oak&Aspen, OakAndAspen, web, développement, Irina, Despot, freelance"
     },
+    pageTitle: "Accueil",
     welcome: "En quelques mots",
     firstParagraph: "Après avoir terminé mes études en ingénierie des médias en été 2019, j'ai choisi la voie difficile: celle de l'entreprenariat. Je tente actuellement de concilier mon travail de développeur en freelance et mon projet de startup. Je suis à la recherche de mandats, alors n'hésitez pas à m'envoyer un email pour me faire part de vos idées de projets.",
     services: [

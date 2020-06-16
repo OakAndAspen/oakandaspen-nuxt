@@ -1,9 +1,10 @@
 export default {
-    pageTitle: "Services",
     meta: {
+        title: "Services",
         description: "Découvrez ici les services que je propose ainsi que mes outils et ma méthode de travail.",
         keywords: "Services, prestations, outils, méthode"
     },
+    pageTitle: "Services",
     list: [
         {
             icon: "browser",

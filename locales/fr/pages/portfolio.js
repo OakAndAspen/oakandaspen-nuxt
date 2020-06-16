@@ -1,11 +1,12 @@
 import {imgDir} from "../../../config/app.js";
 
 export default {
-    pageTitle: "Portfolio",
     meta: {
+        title: "Portfolio",
         description: "Voici mes derniers projets en date, allant du développement d'applications aux campagnes de communication.",
         keywords: "Portfolio, projets, développement, communication, réalisations"
     },
+    pageTitle: "Portfolio",
     subtitle: "Parcourez mes projets",
     text: "Du développement web aux campagnes de marketing, des projets personnels aux projets en équipe, j'ai déjà accumulé un certain panel de compétences. ",
     projects: [

@@ -34,9 +34,13 @@
     import Badge from "~/components/Badge.vue";
     import TheFootnote from "~/components/TheFootnote.vue";
     import ThePageLayout from "~/layouts/ThePageLayout.vue";
+    import {getMetadata} from "~/utils/utils.js";
 
     export default {
         name: "Portfolio",
-        components: {TheFootnote, Badge, ThePageLayout}
+        components: {TheFootnote, Badge, ThePageLayout},
+        head() {
+            return getMetadata(this.$t("portfolio.meta"));
+        }
     }
 </script>

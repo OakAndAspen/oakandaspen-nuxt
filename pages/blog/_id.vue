@@ -32,6 +32,7 @@
 
 <script>
     import ThePageLayout from "~/layouts/ThePageLayout.vue";
+    import {getMetadata} from "~/utils/utils.js";
 
     export default {
         name: "Blog",
@@ -55,6 +56,14 @@
             return {
                 content: "<p>Loading...</p>"
             };
+        },
+        head() {
+            return getMetadata({
+                title: this.article.title,
+                description: "Blog #" + this.article.number + " - Oak&Aspen",
+                keywords: (this.article.title + " blog Oak and Aspen").replace(/ /gi, ", "),
+                type: "blog"
+            });
         }
     }
 </script>

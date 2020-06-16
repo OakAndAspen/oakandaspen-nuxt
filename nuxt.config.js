@@ -1,17 +1,17 @@
-import i18n from "./config/nuxt-i18n.js";
 import fontawesome from "./config/nuxt-fontawesome.js";
+import i18n from "./config/nuxt-i18n.js";
 
 export default {
     mode: 'universal',
     head: {
-        title: process.env.npm_package_name || '',
         meta: [
             {charset: 'utf-8'},
-            {name: 'viewport', content: 'width=device-width, initial-scale=1'},
-            {hid: 'description', name: 'description', content: process.env.npm_package_description || ''}
+            {name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no'},
+            {name: "robots", content: "index,follow"},
+            {name: "revisit-after", content: "3 days"}
         ],
         link: [
-            {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
+            {rel: 'icon', type: 'image/x-icon', href: '/images/favicon.png'}
         ]
     },
     loading: {color: '#fff'},

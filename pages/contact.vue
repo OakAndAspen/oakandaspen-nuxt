@@ -31,6 +31,7 @@
     import TheContactForm from "~/components/TheContactForm.vue";
     import ThePageLayout from "~/layouts/ThePageLayout.vue";
     import {email} from "~/config/app.js";
+    import {getMetadata} from "~/utils/utils.js";
 
     export default {
         name: "Contact",
@@ -39,6 +40,9 @@
             return {
                 email
             }
+        },
+        head() {
+            return getMetadata(this.$t("contact.meta"));
         }
     }
 </script>

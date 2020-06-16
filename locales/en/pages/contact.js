@@ -1,11 +1,12 @@
 import {email} from "../../../config/app.js";
 
 export default {
-    pageTitle: "Contact",
     meta: {
+        title: "Contact",
         description: "Do you wish to contact me about a project? You're in the right place.",
         keywords: "Contact, email, message"
     },
+    pageTitle: "Contact",
     form: {
         title: "Contact form",
         name: "Your name",

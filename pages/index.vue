@@ -49,14 +49,16 @@
 <script>
     import TheFootnote from "~/components/TheFootnote.vue";
     import ThePageLayout from "~/layouts/ThePageLayout.vue";
+    import {getMetadata} from "~/utils/utils.js";
 
     export default {
-        head() {
-            return {title: "Home page"}
-        },
+        name: "Home",
         components: {
             ThePageLayout,
             TheFootnote,
+        },
+        head() {
+            return getMetadata(this.$t("home.meta"));
         }
     }
 </script>

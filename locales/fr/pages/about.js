@@ -1,9 +1,10 @@
 export default {
-    pageTitle: "À propos",
     meta: {
+        title: "À propos",
         description: "Voici un aperçu de ma formation et de mes intérêts.",
         keywords: "Irina, Despot, formation, hobbies, intérêts"
     },
+    pageTitle: "À propos",
     education: {
         subtitle: "Ma formation",
         text: "Promise depuis mon plus jeune âge à une carrière littéraire, mon séjour au Gymnase de Burier m'a fait prendre un tournant inattendu. Presque dix ans après mon entrée au gymnase, je me retrouve avec un titre d'ingénieur, développeuse web indépendante et en plein lancement d'une startup. Voici mon parcours.",

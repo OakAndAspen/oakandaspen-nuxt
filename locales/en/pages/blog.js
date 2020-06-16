@@ -1,9 +1,10 @@
 export default {
-    pageTitle: "Blog",
     meta: {
+        title: "Blog",
         description: "This is my blog, a place to put my thoughts when my brain overflows.",
         keywords: "Blog, articles, thoughts"
     },
+    pageTitle: "Blog",
     title: "A place for my thoughts",
     text: "In February 2019, I started writing articles for my blog as I was taking a plane to the farthest place I've even been to: San Francisco. I wrote my first three articles during that trip, and haven't been very consistent since then. I hope to find the time to write again.",
     articles: [

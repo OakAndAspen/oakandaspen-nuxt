@@ -1,9 +1,10 @@
 export default {
-    pageTitle: "About",
     meta: {
+        title: "About",
         description: "Here is a summary of my education and my hobbies and interests.",
         keywords: "Irina, Despot, education, hobbies, interests"
     },
+    pageTitle: "About",
     education: {
         subtitle: "My education",
         text: "Promised to a literary career from a very young age, my life took an unexpected turn during my time in high school. Almost ten years later, I find myself with a title of engineer, doing freelance web development and launching a startup. Here's how I got there.",

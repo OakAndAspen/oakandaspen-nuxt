@@ -26,13 +26,13 @@
 
     export default {
         name: "ThePageLayout",
+        props: ["pageCode"],
+        components: {TheFloatingMenu, TheHomeHeader, TheNormalHeader, TheFooter},
         data() {
             return {
                 isMenuOpen: false
             }
-        },
-        props: ["pageCode"],
-        components: {TheFloatingMenu, TheHomeHeader, TheNormalHeader, TheFooter}
+        }
     }
 </script>
 

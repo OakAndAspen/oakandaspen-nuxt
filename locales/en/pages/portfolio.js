@@ -1,11 +1,12 @@
 import {imgDir} from "../../../config/app.js";
 
 export default {
-    pageTitle: "Portfolio",
     meta: {
+        title: "Portfolio",
         description: "Here's a showcase of my latest projects, ranging from apps and websites to marketing campagns.",
         keywords: "Portfolio, showcase, projects, developement, communication, achievements"
     },
+    pageTitle: "Portfolio",
     subtitle: "Browse my projects",
     text: "From web development to marketing campaigns, from personal projects to team projects, I have accumulated a large range of skills.",
     projects: [
