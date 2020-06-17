@@ -37,12 +37,42 @@
 </script>
 
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
-    @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap');
-
     @font-face {
         font-family: Novecento;
         src: url("../assets/fonts/NovecentoSansWideDemiBold.otf") format("opentype");
+    }
+
+    @font-face {
+        font-family: Pacifico;
+        src: url("../assets/fonts/Pacifico-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: "PT Sans";
+        src: url("../assets/fonts/PTSans-Regular.ttf");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "PT Sans";
+        src: url("../assets/fonts/PTSans-Bold.ttf");
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "PT Sans";
+        src: url("../assets/fonts/PTSans-Italic.ttf");
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "PT Sans";
+        src: url("../assets/fonts/PTSans-BoldItalic.ttf");
+        font-weight: bold;
+        font-style: italic;
     }
 
     #App {
