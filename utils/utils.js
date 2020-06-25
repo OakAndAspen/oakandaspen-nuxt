@@ -12,9 +12,9 @@ import {meta} from "../config/app.js";
  * - image(optional)
  */
 export function getMetadata(page) {
-    let title = page.title || meta.site.name;
+    let title = page.title + " - " + meta.site.name;
     let description = page.description;
-    let keywords = page.keywords;
+    let keywords = page.keywords + ", " + meta.site.keywords;
     let type = page.type || meta.site.defaultType || "website";
     let image = page.image || meta.site.logo;
     let url = meta.site.url;

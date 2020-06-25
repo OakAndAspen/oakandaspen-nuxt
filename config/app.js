@@ -1,4 +1,4 @@
-export const root = "https://oakandaspen.ch"
+export const root = "http://localhost:3000"
 export const facebookLink = "https://www.facebook.com/alerya.despot";
 export const linkedInLink = "https://www.linkedin.com/in/irina-despot";
 export const gitHubLink = "https://github.com/OakAndAspen";
@@ -9,6 +9,7 @@ export const meta = {
         name: "Oak & Aspen Web Design",
         url: "https://oakandaspen.ch",
         defaultType: "website",
+        keywords: "oak, aspen, web, développement, website, site, internet",
         logo: "/images/favicon.png",
         email: "contact@oakandaspen.ch"
     },

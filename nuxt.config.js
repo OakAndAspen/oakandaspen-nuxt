@@ -2,6 +2,9 @@ import fontawesome from "./config/nuxt-fontawesome.js";
 import i18n from "./config/nuxt-i18n.js";
 
 export default {
+    server: {
+        port: 3000
+    },
     mode: 'universal',
     head: {
         meta: [
